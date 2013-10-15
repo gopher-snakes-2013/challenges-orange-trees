@@ -36,3 +36,16 @@ function createOrange() {
     diameter: Math.floor(Math.random()*10)+1
   };
 }
+
+
+// Alternative solution for later referene:
+// createTree(){
+//   var tree = {};
+//   tree.age = 0;
+//   tree['height']=0;
+//   tree.grow = function() {
+
+//   }
+
+//   return tree;
+// }
