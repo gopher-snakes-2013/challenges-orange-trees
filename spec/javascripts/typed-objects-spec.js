@@ -1,36 +1,35 @@
 FRUIT_BEARING_AGE = 3;
-MAX_AGE = 50
+MAX_AGE = 50;
 
 function createTree() {
   return {
     age: 0,
     height: 0,
     orangeCount: 0,
+    isAlive: true,
 
     grow: function() {
-      this.age += 1,
-      this.height += 10
+      this.age += 1;
+      this.height += 10;
 
       if(this.age >= FRUIT_BEARING_AGE){
         this.orangeCount += Math.floor(Math.random()*10)+1;
       }
+      if(this.age > MAX_AGE){
+        this.die();
+      }
     },
 
     die: function() {
-      if (this.age >= MAX_AGE) {
-        this.isAlive = false;
-      }
-
+      this.isAlive = false;
     },
 
     dropOrange: function() {
-      return 'something';
+      return "";
     }
-
   };
   
 }
-
 
 function createOrange() {
   return {
