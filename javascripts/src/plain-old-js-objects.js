@@ -1,4 +1,3 @@
-FRUIT_BEARING_AGE = 3;
 MAX_AGE = 50;
 
 function createTree() {
