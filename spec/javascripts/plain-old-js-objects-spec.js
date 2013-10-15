@@ -3,32 +3,32 @@ describe ("createTree", function(){
     expect(createTree()).toBeDefined();
   });
 
-  xit("should return tree with age 0 when created", function(){
+  it("should return tree with age 0 when created", function(){
     var tree=createTree();
     expect(tree.age).toEqual(0);
   });
-  xit ("should have height 0 when created", function(){
+  it ("should have height 0 when created", function(){
     var tree=createTree();
     expect(tree.height).toEqual(0);
   });
-  xit ("should have 0 oranges if age < FRUIT_BEARING_AGE", function(){
+  it ("should have 0 oranges if age < FRUIT_BEARING_AGE", function(){
     var tree=createTree();
     expect(tree.orangeCount).toEqual(0);
   });
   describe("grow", function(){
 
-    xit("should increase the age of the tree by 1 year", function(){
+    it("should increase the age of the tree by 1 year", function(){
       var tree=createTree();
       tree.grow();
       expect(tree.age).toEqual(1);
     });
 
-    xit("should increase the height of the tree by 10 inches", function(){
+    it("should increase the height of the tree by 10 inches", function(){
       var tree=createTree();
       tree.grow();
       expect(tree.height).toEqual(10);
     });
-    xit ("should add a random number of oranges if age > FRUIT_BEARING_AGE", function(){
+    it ("should add a random number of oranges if age > FRUIT_BEARING_AGE", function(){
       var tree=createTree();
       while(tree.age< FRUIT_BEARING_AGE){
         tree.grow();
