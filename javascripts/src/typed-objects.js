@@ -1,7 +1,8 @@
 var AGE_OF_DEATH = 15
 
 
-function Tree() {
+function Tree(type) {
+  this.type = type;
   this.age = 0;
   this.height = 0;
   this.numOranges = 0;
@@ -26,3 +27,4 @@ Tree.prototype.die = function(){
 function Orange(){
  this.diameter = Math.floor((Math.random()+1)*5);
 }
+

@@ -25,6 +25,7 @@ var createTree = function(){
     dropOrange: function(){
       this.orangeCount -= 1;
       return createOrange();
+      
     }
   }  
 }
