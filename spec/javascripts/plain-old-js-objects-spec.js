@@ -35,9 +35,6 @@ describe ("createTree", function(){
       }
       expect(tree.orangeCount).toBeGreaterThan(0);
     });
-  });
-
-  describe ("die",function(){
     xit("should die when age > MAX_AGE",function(){
       var tree=createTree();
       while(tree.age < MAX_AGE){
@@ -47,6 +44,7 @@ describe ("createTree", function(){
       expect(tree.isAlive).toBeFalsy();
     });
   });
+
   describe("dropOrange", function(){
     xit("should return the orange that is removed from oranges", function(){
       var tree=createTree();
