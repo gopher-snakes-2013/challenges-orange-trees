@@ -1,4 +1,5 @@
 FRUIT_BEARING_AGE = 3;
+MAX_AGE = 50
 
 function createTree() {
   return {
@@ -13,9 +14,26 @@ function createTree() {
       if(this.age >= FRUIT_BEARING_AGE){
         this.orangeCount += Math.floor(Math.random()*10)+1;
       }
-    }
+    },
 
+    die: function() {
+      if (this.age >= MAX_AGE) {
+        this.isAlive = false;
+      }
+
+    },
+
+    dropOrange: function() {
+      return 'something';
+    }
 
   };
   
+}
+
+
+function createOrange() {
+  return {
+    diameter: Math.floor(Math.random()*10)+1
+  };
 }
