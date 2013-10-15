@@ -23,7 +23,8 @@ var createTree = function(){
     },
 
     dropOrange: function(){
-      return "this is a lie"
+      this.orangeCount -= 1;
+      return createOrange();
     }
   }  
 }
