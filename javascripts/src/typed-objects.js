@@ -33,7 +33,14 @@ var Fruit = function() {
   this.diameter = getRandomInt(1,10);
 }
 
-var Orange = function() {}
+var Orange = function() {
+  
+}
 
 Orange.prototype     = new Fruit();
 OrangeTree.prototype = new Tree();
+
+function plantTree() {
+  tree = new OrangeTree;
+  return tree;
+}
