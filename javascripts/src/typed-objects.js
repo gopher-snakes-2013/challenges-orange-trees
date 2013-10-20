@@ -34,6 +34,10 @@ Tree.prototype.grow = function(){
 };
 
 
+Tree.prototype.pick = function(){
+  this.orangeCount -= 1;
+}
+
 Tree.prototype.die = function(){
   // OMG WHAT IS WRONG WITH MY IF LOOPS??!?!?
  if (this.age > MAX_AGE) {
